@@ -18,6 +18,9 @@ document.getElementById("btnBuscar").addEventListener("click", function() {
           const description = image.data[0].description;
           const dateCreated = image.data[0].date_created;
   
+          const fila = document.createElement('div');
+          fila.classList.add('col-4');
+                  
           const imageElement = document.createElement("img");
           imageElement.src = imageUrl;
   

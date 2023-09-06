@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
           alert('Por favor, ingrese un término de búsqueda.');
           return;
       }
-
-      const apiUrl = `https://images-api.nasa.gov/search?q=` + searchText;
+      const url = `https://images-api.nasa.gov/search?q=`
+      const apiUrl = url + searchText;
 
       fetch(apiUrl)
           .then(response => response.json())
