@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
           return;
       }
 
-      const apiUrl = `https://images-api.nasa.gov/search?q=${(searchText)}`;
+      const apiUrl = `https://images-api.nasa.gov/search?q=` + searchText;
 
       fetch(apiUrl)
           .then(response => response.json())
