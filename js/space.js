@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const date = item.data[0].date_created;
 
             const card = document.createElement('div');
-            card.classList.add('col-lg-4', 'col-md-6', 'mb-3'); // Bootstrap grid classes
+            card.classList.add('col-lg-4', 'col-md-6', 'mb-3'); 
             card.innerHTML = `
                 <div class="card">
                     <img src="${image}" class="card-img-top" style="height: 500px" alt="${title}">
